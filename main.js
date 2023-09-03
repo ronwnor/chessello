@@ -273,3 +273,9 @@ function handleBlackDiskClick(){
         updateDisplay();
     }
 }
+
+// for mobile
+if(innerWidth <= 767){
+    $('.disks').removeChild(whiteDiskEl);
+    $('.mobile-only').appendChild(whiteDiskEl);
+}
