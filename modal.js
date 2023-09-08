@@ -55,7 +55,7 @@ function showEndModal(side, reason){
     score[side == 'White' ? 'x' : 'y']++;
     hasGameStarted = false;
 
-    modalTitle.innerHTML = `${side} wins<div>by ${reason}</div>`;
+    modalTitle.innerHTML = `${score.x} - ${score.y}<br/>${side} wins<div>by ${reason}</div>`;
     modalButton.innerText = 'New Game';
     modal.showModal();
 }
