@@ -245,7 +245,6 @@ dialog::backdrop {
 
     dialog[open]{
         width: 50%;
-        height: 30%;
         justify-content: space-evenly;
     }
 
