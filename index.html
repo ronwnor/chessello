@@ -3,18 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js" defer></script>
+    <script src="game.js" defer></script>
+    <script src="modal.js" defer></script>
     <link rel="stylesheet" href="styles.css"> 
     <title>chessello</title>
 </head>
 <body>
-    <div class="board-container">
-        <div class="disks">
-            <div id="black-disk"></div>
-            <div id="white-disk"></div>
+    <div class="container">
+        <div class="clock">1:00</div>
+        <div class="board-container">
+            <div class="disks">
+                <div id="black-disk"></div>
+                <div id="white-disk"></div>
+            </div>
+            <div class="board"></div>
+            <div class="disks mobile-only"></div>
         </div>
-        <div class="board"></div>
-        <div class="disks mobile-only"></div>
+        <div class="clock active">1:00</div>
     </div>
+    <div id="follow-mouse"></div>
+    <dialog>
+        <div class="title">New Game<div></div></div>
+        <select>
+            <option value="Infinity|0">none</option>
+            <option value="3|0">3 | 0</option>
+            <option value="3|2" selected>3 | 2</option>
+            <option value="5|0">5 | 0</option>
+            <option value="5|5">5 | 5</option>
+            <option value="10|0">10 | 0</option>
+            <option value="10|5">10 | 5</option>
+            <option value="10|10">10 | 10</option>
+            <option value="20|0">20 | 0</option>
+            <option value="30|0">30 | 0</option>
+        </select>
+
+        <div class="toggle">
+            <div class="toggle white selected"></div>
+            <div class="toggle black"></div>
+        </div>
+        <button> start </button>
+    </dialog>
 </body>
 </html>

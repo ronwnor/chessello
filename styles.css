@@ -9,18 +9,142 @@ html, body {
     --black-pawn: url(https://www.chess.com/chess-themes/pieces/neo/64/bp.png);
     --white-disk: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAABPtJREFUeJztmjFsE1cch793d44TUFArOQxUSsLirRJZqGTHg2UuihkaxGpRdS8IBVqvCMGCE5JUSvcK5LWEDjjEiTI4QSodiNTtFpwMDMRSBUjYjs/vdbmoCBXUe3fmWsWf5M3///3yxe/p3XtPKKU4yhhRB4iavoCoA0RNX0DUAaKmLyDqAFHTFxB1gKjpC4g6QNRYUTw0m80OGobxhWVZnwFIKf90XffF5uZm61NnEZ/iZSibzSZisdgFpdQ5IcRZYBwQ731NAXWl1FPDMKoHBwcPNzc3G73O1lMB09PTZ6WUPwAzQCwej5NMJhkfH2dkZIQTJ04A8OrVKxqNBvV6HcdxaLfbAB3goWEYc6urq097lbEnAmzbHhVCLAIXLcsik8mQy+WYmJggFot9tLbT6bCzs8P6+jq1Wg3XdQF+UUrNVqvVvbCzhi7Atu1vgGXTNIfz+TyFQoFEIqHVq9FoUC6XqVQqdLvdN8DlarV6L8y8oQm4efOmsb29vQBcHR0dpVgskkwmQ+ntOA6lUom9vT2AH9Pp9LUbN27IMHqHIsD7438GLk1OTlIsFhkcHAzc911arRalUomtrS2A++l0+ttQJCilAn9s216ybVvNz8+rbrereoWUUt29e1fZtq1s214KI3vghZA35q+m02muXbuGYfRubSWEYHZ2lsnJSYCr3rOD9QwyBHK53JhhGH+MjY0NLy8vh/6z/xDNZpMrV66wu7v7Rkr55cbGxq5ur0D/LtM0F0zTHO7FmP8YQ0NDFItFTNMcNk1zIUgvbQHT09NngYv5fD602d4PyWSSfD4PcNHLooW2ACnlD5ZlUSgUdFsEplAoYFkW3mpTCy0B58+fHwFmMpmM9iInDBKJBJlMBmDGy+QbLQGu684AsVwup1MeKl6GWLfb/VqnXkuAUupcPB7nzJkzOuWhMjExQTweRyk1pVOvJUAI8VUymWRgYECnPFRisdjhJKw1EfoWkEqlhoCx06dP6zyvJ4yPjwOMedl84VvA0NDQKUBEOfm9z8mTJwGEl80XvgWYpjkMcPz4cb+lPePYsWPA39n8cOQ3RX0L8DYmePv2bfhpNDnMcpjND74FNJvNF4Da39/3W9ozXr58CaC8bL7wLeDJkydNoP78+XO/pT2jXq8D7HrZfKG7EHrqOA4HBwc65aHS6XRwHAel1G869VoCDMOottttdnZ2dMpD5dmzZ7TbbYQQ6zr1WgJM0/wV6GxsbOiUh4qXodPpdFZ06rUEPHr0aB9YqdVqNBo9P7z5II1Gg1qtBrCie4oUZD9gznVdVS6XdVsEplwu47quklLO6fbQFrC+vv478KBSqeA4jm4bbRzHoVKpADzwsmgRaCWolJqVUr4ulUq0Wp/uYLfZbFIqlZBSvlZKzQbpFUiAd1Z3eW9vjzt37hBkh/nfopRibm7u8JToctDzwsDvAmtra/eFEEvb29ssLCwgZSgnVv+IUorFxUW2trYQQiytra3dD9ozlJehVCp1XQhx7/Hjx9y+fbsnw6HVanHr1i1WV1cRQtxLpVLXw+jbPxwNe9xOTU1dUkr91IvjcSHEd2H87N+lf0GilzO3d0Xme+ACeldkVgzDmP/fXZF5n2w2mxgYGJiRUtpH6pLUh8hms4OWZZ0yDONzOALX5P7L9DdFow4QNX0BUQeImr6AqANETV9A1AGipi8g6gBRc+QF/AUfGxqYzyIpEAAAAABJRU5ErkJggg==");
     --black-disk: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAABJlJREFUeJztmk1vG1UUhp8z/k6T2k5rVSpx0ig4I1ViW/5AYUlQ9ymwphIqor+iqBQJ1kC7py3b8gcoS6RK4xC1id1IlWljJ2n8MZ45LDJGJWqBuTPOFMXPes6Zd94798yde66oKscZK2kBSTMxIGkBSTMxIGkBSTMxIGkBSTMxIGkBSTMxIGkBSZNO4qaLi4v5dDr9VjqdLgH4vr89GAy2Hj161DtqLXIUP0O2bZ8GPgQuAheAc4AcukyBx8ADEbmvqvccx/lj3NrGaoBt2xdU9ZqIrAAZy7KYKhTI53JksxlSqRQAw6GH67r0+n32u1183wdwVfWeiFx3HOfBuDSOxYClpaX5dDr9FXBJRCgVi5RLRWampxE5PPB/R1XZ3XvBdrtNu9Mh0PfjcDi8ur6+vhm31tgNsG37MvCNiMycmi1zplIhk8kY5XJdl6etFs+eb6Oqu8AVx3Fuxak3NgNExKrVajdE5LN8Lsd8dY6pQiGW3PvdLpuNJr1+H1X9em1t7XNV9ePIHYsBImItLy9/D6yWiieZn5vDsuL9wvq+z2azSbuzA3C7Xq9/HIcJsais1Wo3gNXZcpmFajX2hwewLIuFapXZchlgNbhnZCK/AcGc/6F48iTn5qv/WuSioqpsNBqjN+GjqDUhkgHnz59f8Dzvt3wuN7P89tJYRv5V+L5P/fd1ev3+biqVeufhw4cbprkiKfY874aIzMxX45/z/4RlWcxX5xCRGc/zIk0FY9W2bV8ALp2aLcdW7cMwVShwarYMcCnQYoSxAcEKjzOVimmKyJypVBARVPWaaQ4jA2q1WkVEVkrFovEiJw4ymQylYhERWanVakYjYWSAZVkrQKZcKpqEx0qgIZNKpT4wiTedAhcty2L6xAnD8PiYmZ7GsixU9X2TeFMD3p0qFI608r8OERkVYaNCGPoJqtVqAVjI53Mm9xsL+VwOYCHQForQBuTz+bOAZBMsfofJZrMAEmgLRWgDRGQG+Gsz400glTp4jJG2MCQ/iRMmtAHBxgSeF8vveCyMtIy0hSG0Ab1ebwvQgTsIGzo2BoMBgAbaQhHagEaj0QUe93r9sKFjo9fvA2wE2kJhWgMevLR7myiqyn63C/CLSbyRASJy3/d99l68MAmPld29vdFA/GwSb2SA53k/Ae52u2MSHiuBBhe4axJvZMDa2loLuNvudHBd1yRFLLiuS7vTAbhr2kWKsg64rqr6tNWKkCIaT1st9GBP77ppDmMDHMf5Fbjz7Pn2qAgdKfvdLs+ebwPcCbQYEWklOBwOr6rqzmajeaRfBN/32Ww0UdWd4XB4NUquSAYEvborvX6fjQNBUdL9J1SVzWZz9O2/ErVfGPlfwHGc26p6s7OzQ+PJ1lhNUFUaT7Zod3ZQ1ZuO49yOmjPO1th3wOUjao3dqtfrn8TRGps0R8fQHl8Fvh1Te/zTOF77l5kckBj3ERngCw7OB4U+IsPB8vbL/90RmcPYtn1aRFZU9T2O0yGp17G4uJjPZrNnLcsqwzE4JvcmM9kUTVpA0kwMSFpA0kwMSFpA0kwMSFpA0kwMSFpA0hx7A/4EoxdTZ3MkcTQAAAAASUVORK5CYII=");
+
 }
 
 body {
     display: flex;
     vertical-align: middle;
     background-color: #302e2b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+dialog[open] {
+    border: none;
+    border-radius: 20px;
+    padding: 30px 35px;
+    background-color: #262522;
+    box-shadow: 0 0 20px #262522;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    > .title {
+        font-size: larger;
+        color: #ddd;
+        text-align: center;
+
+        > div {
+            font-size: small;
+        }
+    }
+
+    > select {
+        text-align: center;
+        border: none;
+        padding: 5px 20px;
+        border-radius: 5px;
+        background-color: #373633;
+        color: #fff;
+    }
+
+    > select:hover {
+        background-color: #494846;
+    }
+
+    > select:focus {
+        outline: none;
+    }
+
+    > .toggle {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        border-radius: 5px;
+        min-height: 35px;
+        max-height: 60px;
+        overflow: hidden;
+        cursor: pointer;
+
+        > * {
+            width: 100%;
+            background-color: #373637;
+            background-size: auto 80%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        > .white {
+            background-image: var(--white-pawn);
+            border-right: 1px solid #888;
+        }
+        > .black {
+            background-image: var(--black-pawn);
+        }
+
+        > :not(.selected):hover {
+            background-color: #494846;
+        }
+
+        > .selected {
+            background-color: #333;
+            background-color: #81b64c;
+            cursor: default;
+        }
+
+    }
+
+    > button {
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        color: #fff;
+        background-color: #81b64c;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+
+    > button:hover {
+        background-color: #a3d160;
+        box-shadow: 0 0 2px #a3d160;
+    }
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(10px);
+}
+
+#follow-mouse {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    z-index: 999;
+    pointer-events: none;
+    cursor: grabbing;
+}
+
+
+.container {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+}
+
+.clock {
+    padding: 10px 20px;
+    background-color: #3c3b39;
+    border-radius: 10px;
+    color: #aaa;
+}
+
+.clock.active {
+    color: #fff;
 }
 
 .board-container {
     display: flex;
-    margin: auto;
-    background: black;
 }
 
 .board {
@@ -29,7 +153,7 @@ body {
     display: grid;
     grid-template-columns: repeat(8, 12.5%);    
     grid-template-rows: repeat(8, 12.5%);
-    grid-auto-flow: row;
+    /* grid-auto-flow: row; */
 }
 
 .disks {
@@ -39,7 +163,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    font-size: 3rem;
+    font-size: larger;
 }
 
 .tile {
@@ -54,6 +178,20 @@ body {
     background-size:cover;
 
     cursor: default;
+}
+
+.tile.mid-drag:hover {
+    box-sizing: border-box;
+    border: 5px solid rgba(255,255,255, 0.4);
+}
+
+.tile.candidate::before{
+    content: '';
+    width: 30%;
+    height: 30%;
+    position: inherit;
+    background-color: rgba(0,0,0, 0.1);
+    border-radius: 50%;
 }
 
 .tile.dark {
@@ -71,9 +209,11 @@ body {
 
 .tile.white.pawn {
     background-image: var(--white-pawn);
+    cursor: grab;
 }
 .tile.black.pawn {
     background-image: var(--black-pawn);
+    cursor: grab;
 }
 .tile.white.disk {
     background-image: var(--white-disk);
@@ -97,7 +237,17 @@ body {
     display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-aspect-ratio: 8/10) {
+
+    * {
+        font-size: large;
+    }
+
+    dialog[open]{
+        width: 50%;
+        height: 30%;
+        justify-content: space-evenly;
+    }
 
     .mobile-only {
         display: block;
@@ -114,16 +264,33 @@ body {
 
     .disks {
         width: 100vw;
+        display: flex;
         flex-direction: row;
 
-        > * {
+        > .clock {
+            background-color: #555;
+            margin: 10px;
+            margin-right: 20px;
+        }
+
+        > :not(.clock) {
             width: 12.5vw !important;
             height: 12.5vw !important;
             background-size: contain;
+            margin-left: 10px;
         }
+
+    }
+
+    #black-disk + .clock {
+        transform: rotate(180deg);
     }
 
     .tile.black.pawn {
         transform: rotate(180deg) scale(1.02);
     }
+}
+
+.hidden {
+    visibility: hidden;
 }
