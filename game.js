@@ -334,6 +334,10 @@ function endTurn(){
         showEndModal('Black', 'Othello');
     } else if(!cells.some(e => e == 4)){
         showEndModal('White', 'Othello');
+    } else if([0,1,2,3,4,5,6,7].map(e => cells[e]).includes(2)){
+        showEndModal('Black', 'Promotion');
+    } else if([56,57,58,59,60,61,62,63].map(e => cells[e]).includes(1)){
+        showEndModal('White', 'Promotion');
     }
 
     turn = 3 - turn; // 3 - (1) = 2;  3 - (2) = 1;
