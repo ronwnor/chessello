@@ -39,10 +39,12 @@ modalButton.onclick = () => {
     if(timeFormat.x == Infinity){
         $$('.clock').forEach(e => e.classList.add('hidden'));
     } else {
-        timeLeft.x = timeFormat.x;
-        timeLeft.y = timeFormat.x;
-        updateClockDisplay();
+        $$('.clock').forEach(e => e.classList.remove('hidden'));
     }
+    timeLeft.x = timeFormat.x;
+    timeLeft.y = timeFormat.x;
+    updateClockDisplay();
+
 
     modal.close(); 
     // addEventListener('touchend', handleTouchend);
