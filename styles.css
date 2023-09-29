@@ -21,6 +21,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -100;
+}
+
 dialog[open] {
     border: none;
     border-radius: 20px;
@@ -283,7 +292,7 @@ dialog::backdrop {
             width: 12.5vw !important;
             height: 12.5vw !important;
             background-size: contain;
-            margin-left: 10px;
+            margin-left: 56.5px;
         }
 
     }
