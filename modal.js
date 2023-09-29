@@ -2,7 +2,10 @@ const modal = $`dialog`;
 const modalTitle = $`dialog div`;
 const [modalToggleWhite, modalToggleBlack] = $`dialog .toggle`.children;
 const modalButton = $`dialog button`;
+// const [blackClockEl, whiteClockEl] = $$('.clock');
+
 const score = Vec.new(0, 0);
+
 
 // removeEventListener('touchend', handleTouchend);
 modal.showModal();
@@ -10,10 +13,17 @@ modal.showModal();
 modalToggleWhite.onclick = () => {
     modalToggleWhite.classList.add("selected");
     modalToggleBlack.classList.remove("selected");
+
+    whiteClockEl.classList.add("active");
+    blackClockEl.classList.remove("active");
+
 }
 modalToggleBlack.onclick = () => {
     modalToggleBlack.classList.add("selected");
     modalToggleWhite.classList.remove("selected");
+
+    whiteClockEl.classList.remove("active");
+    blackClockEl.classList.add("active");
 }
 
 modalButton.onclick = () => {
